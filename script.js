@@ -1,13 +1,15 @@
-if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
-    var userName = prompt("Enter your name");
-    if (userName == null || userName == "") {
+if (
+    window.location.pathname.endsWith('/') || 
+    window.location.pathname.endsWith('/index.html')
+) {
+    var userName = prompt("Enter your name:");
+    if (!userName) {
         document.getElementById("User").innerHTML = "Guest";
+    } else {
+        document.getElementById("User").innerHTML = userName.trim();
     }
-    else{
-        document.getElementById("User").innerHTML = userName;
-    }
-    
 }
+
 
 function toggleTheme() {
     document.body.classList.toggle('light-mode');
