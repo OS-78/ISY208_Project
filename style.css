@@ -1,0 +1,157 @@
+/*design the layout*/
+*{
+    margin: 5px;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace
+}
+body{
+    background: #000000;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+}
+
+header{
+    background: #2f27ce;
+    padding: 1em 0 1em 0;
+    border-radius: 5px;
+    
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+
+main{
+    background: #2f27ce;
+    padding: 1em 0 1em 0;
+    flex: 5 5 150px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+footer{
+    background: #2f27ce;
+    padding: 1em 0 1em 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.content {
+    background-color: #2f2f2f;
+    border-radius: 5px; 
+    padding: 10px; 
+}
+
+.light-mode {
+    background: white;
+    color: black;
+}
+
+.light-mode header a{
+    color: black;
+}
+
+.light-mode header ul li a{
+    color: white;
+    background-color: black;
+}
+/* design the header */
+
+a{
+    text-decoration: none;
+}
+.navBar{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    color: white;
+    font-size: 35px; font-weight: 600;
+    font-weight: bold;
+}
+li{
+    list-style: none; display: inline-block;
+}
+li a{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+li a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* design the footer */
+
+.icons{
+    color: white;
+}
+.icons :hover{
+    color: black;
+}
+
+/* design about page */
+
+#KSU{
+    color: white;
+    text-decoration:underline;
+}
+
+/* design about projects */
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap content if it overflows */
+    justify-content: space-evenly; /* Space between items */
+    gap: 15px; /* Add spacing between items */
+    padding: 10px;
+}
+.Projects {
+    background: #2f2f2f;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 30%; /* Adjust width for 3 items per row */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+.Projects img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Round edges of the image */
+    margin-bottom: 10px;
+}
+
+.Projects h3 {
+    margin: 10px 0 5px 0; /* Add spacing above and below the title */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Projects p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* design about skils */
+
+.content ol {
+    all: unset; /* This will reset all styles to the default ones */
+}
