@@ -61,6 +61,13 @@ footer{
     color: white;
     background-color: black;
 }
+.light-mode body main .content{
+    background-color: #b3acac;
+}
+body.light-mode .content {
+    background-color: #b3acac;
+    color: #000;
+}
 /* design the header */
 
 a{
@@ -117,9 +124,9 @@ li a:hover {
 
 .projects-container {
     display: flex;
-    flex-wrap: wrap; /* Wrap content if it overflows */
-    justify-content: space-evenly; /* Space between items */
-    gap: 15px; /* Add spacing between items */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
     padding: 10px;
 }
 .Projects {
@@ -127,20 +134,20 @@ li a:hover {
     color: white;
     border-radius: 5px;
     padding: 15px;
-    width: 30%; /* Adjust width for 3 items per row */
-    text-align: center; /* Center-align text */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .Projects img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Round edges of the image */
+    height: auto;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
 .Projects h3 {
-    margin: 10px 0 5px 0; /* Add spacing above and below the title */
+    margin: 10px 0 5px 0;
     font-size: 20px;
     font-weight: bold;
 }
@@ -153,5 +160,5 @@ li a:hover {
 /* design about skils */
 
 .content ol {
-    all: unset; /* This will reset all styles to the default ones */
+    all: unset;
 }
